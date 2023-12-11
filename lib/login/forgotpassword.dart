@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:linkedin_clone/login/forgot.dart';
+import 'package:linkedin_clone/login/otp.dart';
  class ForgotPassword extends StatefulWidget {
    const ForgotPassword({Key? key}) : super(key: key);
 
@@ -51,9 +52,9 @@ import 'package:linkedin_clone/login/forgot.dart';
            SizedBox(height: 50,),
            SizedBox(width: 350,height: 40,
              child: ElevatedButton(onPressed: (){
-               Navigator.push(context, MaterialPageRoute(builder: (context)=>Forgot()));
+               Navigator.push(context, MaterialPageRoute(builder: (context)=>MyOtp()));
              },
-                 child: Text("Reset password"),
+                 child: Text("Send the code"),
              ),
            )
          ],
